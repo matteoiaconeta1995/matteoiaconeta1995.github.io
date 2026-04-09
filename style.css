@@ -36,6 +36,21 @@ h1 {
 p {
     margin-bottom: 20px;
 }
+#contatti a {
+    color: #0ea5e9; /* Colore azzurro networking che abbiamo usato prima */
+    text-decoration: none; /* Toglie la sottolineatura brutta */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#contatti a:hover {
+    color: #f1f5f9; /* Cambia colore quando ci passi sopra */
+    text-decoration: underline;
+}
+
+#contatti p {
+    margin-bottom: 15px;
+}
 
 /* 4. IL BOTTONE PER IL CV (Networking Style) */
 .btn-cv {
