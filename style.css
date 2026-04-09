@@ -64,3 +64,15 @@ iframe {
     margin-top: 20px;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
 }
+/* Stato iniziale: invisibile e spostato di 20px verso il basso */
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease-out; /* Durata dell'animazione */
+}
+
+/* Stato finale: visibile e in posizione corretta */
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
