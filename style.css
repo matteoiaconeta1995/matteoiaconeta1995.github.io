@@ -1,0 +1,66 @@
+/* 1. RESET E VARIABILI: Per avere una base pulita */
+:root {
+    --primary-color: #0ea5e9; /* Azzurro Networking */
+    --bg-dark: #0f172a;      /* Blu notte professionale */
+    --text-light: #f1f5f9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* 2. LAYOUT: Centrare il contenuto */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* 3. TIPOGRAFIA */
+h1 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/* 4. IL BOTTONE PER IL CV (Networking Style) */
+.btn-cv {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.btn-cv:hover {
+    background-color: transparent;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    transform: translateY(-3px); /* Effetto sollevamento */
+}
+
+/* 5. SEZIONE CV (L'anteprima PDF) */
+iframe {
+    border: 2px solid #334155;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+}
